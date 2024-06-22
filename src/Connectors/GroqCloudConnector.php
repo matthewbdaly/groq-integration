@@ -6,6 +6,9 @@ namespace Matthewbdaly\GroqIntegration\Connectors;
 
 use Saloon\Http\Connector;
 
+/**
+ * @psalm-api
+ */
 final class GroqCloudConnector extends Connector
 {
     public function resolveBaseUrl(): string

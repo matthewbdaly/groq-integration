@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use Matthewbdaly\GroqIntegration\Connectors\GroqCloudConnector;
+use Matthewbdaly\GroqIntegration\DTO\Model;
 use Matthewbdaly\GroqIntegration\Requests\RetrieveModelRequest;
 use Saloon\Http\Faking\MockClient;
 use Saloon\Http\Faking\MockResponse;
@@ -27,5 +28,17 @@ describe('Retrieve model request', function () {
         $connector->send($request);
         $mockClient->assertSent(RetrieveModelRequest::class);
         $mockClient->assertSentCount(1);
+    });
+
+    it('can convert a response to a DTO', function () {
+        $mockClient = new MockClient([
+            RetrieveModelRequest::class => MockResponse::fixture('groqcloud/retrieve-model'),
+        ]);
+        $connector = new GroqCloudConnector(getenv('GROQ_CLOUD_API_KEY'));
+        $connector->withMockClient($mockClient);
+        $request = new RetrieveModelRequest("gemma-7b-it");
+        $response = $connector->send($request);
+        $dto = $response->dto();
+        expect($dto)->toBeInstanceOf(Model::class);
     });
 });

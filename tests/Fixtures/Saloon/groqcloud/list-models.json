@@ -1,0 +1,19 @@
+{
+    "statusCode": 200,
+    "headers": {
+        "Date": "Sat, 22 Jun 2024 14:38:21 GMT",
+        "Content-Type": "application\/json",
+        "Content-Length": "622",
+        "Connection": "keep-alive",
+        "Cache-Control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "vary": "Origin",
+        "x-request-id": "req_01j1064j9ge6zt6173678vyqcf",
+        "via": "1.1 google",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "CF-Cache-Status": "DYNAMIC",
+        "Set-Cookie": "__cf_bm=foveyp61hB3HkgR7bflRoEhS0pT68AMHbE6lzJJuOTI-1719067101-1.0.1.1-QQTBHR6k93p2wIs1.QjPCkE6mXUYziVjFfcPmk0cp9L0VvbN9z.EGPuZo5jWHAROSbEIMWC9HoYTb6XM3kpQDA; path=\/; expires=Sat, 22-Jun-24 15:08:21 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None",
+        "Server": "cloudflare",
+        "CF-RAY": "897cfb47cdf39485-LHR"
+    },
+    "data": "{\"object\":\"list\",\"data\":[{\"id\":\"gemma-7b-it\",\"object\":\"model\",\"created\":1693721698,\"owned_by\":\"Google\",\"active\":true,\"context_window\":8192},{\"id\":\"llama3-70b-8192\",\"object\":\"model\",\"created\":1693721698,\"owned_by\":\"Meta\",\"active\":true,\"context_window\":8192},{\"id\":\"llama3-8b-8192\",\"object\":\"model\",\"created\":1693721698,\"owned_by\":\"Meta\",\"active\":true,\"context_window\":8192},{\"id\":\"mixtral-8x7b-32768\",\"object\":\"model\",\"created\":1693721698,\"owned_by\":\"Mistral AI\",\"active\":true,\"context_window\":32768},{\"id\":\"whisper-large-v3\",\"object\":\"model\",\"created\":1693721698,\"owned_by\":\"OpenAI\",\"active\":true,\"context_window\":1500}]}\n"
+}

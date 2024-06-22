@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Matthewbdaly\GroqIntegration\Requests;
 
-use Matthewbdaly\GroqIntegration\DTO\Model;
+use Matthewbdaly\GroqIntegration\DTO\ModelCollection;
 use Saloon\Enums\Method;
 use Saloon\Http\Request;
 use Saloon\Http\Response;
@@ -23,15 +23,10 @@ final class ListModelsRequest extends Request
 
     public function createDtoFromResponse(Response $response): mixed
     {
-        return array_map(function ($item) {
-            return new Model(
-                id: $item['id'],
-                object: $item['object'],
-                created: $item['created'],
-                owned_by: $item['owned_by'],
-                active: $item['active'],
-                context_window: $item['context_window'],
-            );
-        }, $response->json()['data']);
+        $data = $response->json();
+        return new ModelCollection(
+            object: $data['object'],
+            data: $data["data"],
+        );
     }
 }

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 use Matthewbdaly\GroqIntegration\Connectors\GroqCloudConnector;
 use Matthewbdaly\GroqIntegration\DTO\Model;
+use Matthewbdaly\GroqIntegration\DTO\ModelCollection;
 use Matthewbdaly\GroqIntegration\Requests\ListModelsRequest;
 use Saloon\Http\Faking\MockClient;
 use Saloon\Http\Faking\MockResponse;
@@ -39,7 +40,7 @@ describe('List models request', function () {
         $request = new ListModelsRequest();
         $response = $connector->send($request);
         $dto = $response->dto();
-        expect($dto)->toBeArray();
+        expect($dto)->toBeInstanceOf(ModelCollection::class);
         expect($dto[0])->toBeInstanceOf(Model::class);
     });
 });

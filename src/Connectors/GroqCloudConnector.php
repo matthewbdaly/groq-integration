@@ -8,6 +8,8 @@ use Saloon\Http\Auth\TokenAuthenticator;
 use Saloon\Http\Connector;
 
 /**
+ * Connector for the Groq Cloud API
+ *
  * @psalm-api
  */
 final class GroqCloudConnector extends Connector

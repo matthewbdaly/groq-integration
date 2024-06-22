@@ -10,6 +10,8 @@ use Saloon\Http\Request;
 use Saloon\Http\Response;
 
 /**
+ * List models request
+ *
  * @psalm-api
  */
 final class ListModelsRequest extends Request

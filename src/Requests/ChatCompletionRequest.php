@@ -9,6 +9,11 @@ use Saloon\Enums\Method;
 use Saloon\Http\Request;
 use Saloon\Traits\Body\HasJsonBody;
 
+/**
+ * Chat completion request
+ *
+ * @psalm-api
+ */
 final class ChatCompletionRequest extends Request implements HasBody
 {
     use HasJsonBody;

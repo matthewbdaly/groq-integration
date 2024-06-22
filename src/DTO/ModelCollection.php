@@ -11,6 +11,8 @@ use IteratorAggregate;
 use Traversable;
 
 /**
+ * Model collection class
+ *
  * @psalm-immutable
  */
 final class ModelCollection implements ArrayAccess, Countable, IteratorAggregate

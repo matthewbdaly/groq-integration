@@ -5,6 +5,8 @@ declare(strict_types=1);
 namespace Matthewbdaly\GroqIntegration\DTO;
 
 /**
+ * Model class
+ *
  * @psalm-immutable
  */
 final class Model

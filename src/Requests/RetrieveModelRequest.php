@@ -9,6 +9,11 @@ use Saloon\Enums\Method;
 use Saloon\Http\Request;
 use Saloon\Http\Response;
 
+/**
+ * Retrieve models request
+ *
+ * @psalm-api
+ */
 final class RetrieveModelRequest extends Request
 {
     protected Method $method = Method::GET;

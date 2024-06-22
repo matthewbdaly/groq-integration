@@ -8,6 +8,7 @@ namespace Matthewbdaly\GroqIntegration\DTO;
  * Model class
  *
  * @psalm-immutable
+ * @psalm-api
  */
 final class Model
 {

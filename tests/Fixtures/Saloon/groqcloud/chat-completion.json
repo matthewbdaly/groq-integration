@@ -1,0 +1,25 @@
+{
+    "statusCode": 200,
+    "headers": {
+        "Date": "Sat, 22 Jun 2024 15:13:37 GMT",
+        "Content-Type": "application\/json",
+        "Content-Length": "1475",
+        "Connection": "keep-alive",
+        "Cache-Control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "vary": "Origin",
+        "x-ratelimit-limit-requests": "14400",
+        "x-ratelimit-limit-tokens": "15000",
+        "x-ratelimit-remaining-requests": "14399",
+        "x-ratelimit-remaining-tokens": "14981",
+        "x-ratelimit-reset-requests": "6s",
+        "x-ratelimit-reset-tokens": "76ms",
+        "x-request-id": "req_01j10854j7fqpakzvnyx7bz4ms",
+        "via": "1.1 google",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "CF-Cache-Status": "DYNAMIC",
+        "Set-Cookie": "__cf_bm=zxM0fSYaP_OMX6IDcanuWXmI0o4X9WIejnryLfBA8f8-1719069217-1.0.1.1-CwdXb.4D1MreZjkK3WmF7wTp3x5ZQneIFflxzsqng0sIbJqDYjBZlp5KBPgcywuBPBMLBOV.n10WQREOCLKB6Q; path=\/; expires=Sat, 22-Jun-24 15:43:37 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None",
+        "Server": "cloudflare",
+        "CF-RAY": "897d2eed8ca2416d-LHR"
+    },
+    "data": "{\"id\":\"chatcmpl-e673d6b5-34a8-409a-ade4-54954770f6e7\",\"object\":\"chat.completion\",\"created\":1719069217,\"model\":\"gemma-7b-it\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"**Imagine a super-smart computer program that can understand and generate human language.** That's what a large language model (LLM) is.\\n\\n**Here's how it works:**\\n\\n- LLMs are trained on massive amounts of text data (books, articles, code, etc.)\\n- This training allows them to:\\n    - Understand the meaning of words and sentences\\n    - Generate human-like text\\n    - Translate languages\\n    - Answer questions based on context\\n    - Complete creative writing tasks\\n\\n**In essence, LLMs are like super-intelligent writers, translators, and assistants that can understand and create language.**\\n\\n**Here are some things LLMs can do:**\\n\\n- Help writers brainstorm and write stories\\n- Translate languages in real-time\\n- Summarize lengthy documents\\n- Answer customer service inquiries\\n- Write blog posts and website copy\\n\\n**LLMs are still under development, but their potential is vast.** They are likely to revolutionize various industries and transform the way we interact with technology.\"},\"logprobs\":null,\"finish_reason\":\"stop\"}],\"usage\":{\"prompt_tokens\":26,\"prompt_time\":0.030236247,\"completion_tokens\":210,\"completion_time\":0.243246394,\"total_tokens\":236,\"total_time\":0.273482641},\"system_fingerprint\":\"fp_e3b292b95f\",\"x_groq\":{\"id\":\"req_01j10854j7fqpakzvnyx7bz4ms\"}}\n"
+}

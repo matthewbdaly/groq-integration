@@ -24,7 +24,7 @@ describe('List models request', function () {
         $connector = new GroqCloudConnector(getenv('GROQ_CLOUD_API_KEY'));
         $connector->withMockClient($mockClient);
         $request = new ListModelsRequest();
-        $response = $connector->send($request);
+        $connector->send($request);
         $mockClient->assertSent(ListModelsRequest::class);
         $mockClient->assertSentCount(1);
     });

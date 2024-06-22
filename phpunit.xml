@@ -15,4 +15,7 @@
             <directory suffix=".php">./src</directory>
         </include>
     </source>
+    <php>
+        <env name="GROQ_CLOUD_API_KEY" value=""/>
+    </php>
 </phpunit>

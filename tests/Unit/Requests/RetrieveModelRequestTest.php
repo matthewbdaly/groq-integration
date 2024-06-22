@@ -24,7 +24,7 @@ describe('Retrieve model request', function () {
         $connector = new GroqCloudConnector(getenv('GROQ_CLOUD_API_KEY'));
         $connector->withMockClient($mockClient);
         $request = new RetrieveModelRequest("gemma-7b-it");
-        $response = $connector->send($request);
+        $connector->send($request);
         $mockClient->assertSent(RetrieveModelRequest::class);
         $mockClient->assertSentCount(1);
     });

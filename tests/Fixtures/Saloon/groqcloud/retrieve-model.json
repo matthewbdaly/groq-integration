@@ -1,0 +1,19 @@
+{
+    "statusCode": 200,
+    "headers": {
+        "Date": "Sat, 22 Jun 2024 14:47:04 GMT",
+        "Content-Type": "application\/json",
+        "Content-Length": "115",
+        "Connection": "keep-alive",
+        "Cache-Control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "vary": "Origin",
+        "x-request-id": "req_01j106mgqgeg99q2w75yexjh94",
+        "via": "1.1 google",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "CF-Cache-Status": "DYNAMIC",
+        "Set-Cookie": "__cf_bm=vsfxMoBIqI4RItuMPrQg0H9.mge9jRFj2i_.9Pz84tA-1719067624-1.0.1.1-1eDIM2PrKMSY.jTf28fj8Xs70JiZKEyFqpTRAXycrR19CuMSr2lBNsDFJpdTKJG7Jrd3rmKonYoD6.EbrLyBgA; path=\/; expires=Sat, 22-Jun-24 15:17:04 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None",
+        "Server": "cloudflare",
+        "CF-RAY": "897d080a9f267753-LHR"
+    },
+    "data": "{\"id\":\"gemma-7b-it\",\"object\":\"model\",\"created\":1693721698,\"owned_by\":\"Google\",\"active\":true,\"context_window\":8192}\n"
+}
